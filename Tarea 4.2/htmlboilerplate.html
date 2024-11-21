@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hecha con HTML Boilerplates!</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Esto es mi tarea 4.2 y es una plantilla hecha con HTML Boilerplates"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="favicon.png" />
+    <meta name="theme-color" content="#ff0000" />
+  </head>
+  <body>
+    <header>
+      <h1>Mi tarea 4.2</h1>
+    </header>
+    <nav class="nav" id="nav">
+      <a href="#home">Logo</a>
+      <a href="#menu-item-1">Menu Item 1</a>
+      <a href="#menu-item-2">Menu Item 2</a>
+      <a href="#menu-item-3">Menu Item 3</a>
+    </nav>
+    <p>
+      Esto de arriba es un menú generado por la plantilla, pero no tiene ninguna
+      utilidad.
+    </p>
+
+    <main>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+    <footer></footer>
+    <div
+      id="cookie-notice"
+      style="
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+        bottom: 0;
+        left: 0;
+        background-color: lightgray;
+      "
+    >
+      <p>
+        This website uses cookies so that we can provide you with the best
+        website experience. By clicking “I Accept” you acknowledge the use of
+        cookies and to our <a href="#"><u>Privacy Policy</u></a
+        >.
+      </p>
+      <a id="i-accept">I Accept</a>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function togglemenu() {
+        var x = document.getElementById("nav");
+        if (x.className === "nav") {
+          x.className += " nav--open";
+        } else {
+          x.className = "nav";
+        }
+        var element = document.getElementById("menu-toggle");
+        element.classList.toggle("menu-toggle--open");
+      }
+    </script>
+    <script type="text/javascript">
+      (function ($) {
+        $("#i-accept").on("click", function () {
+          if (localStorage.hidecookiebar !== "1") {
+            $("#cookie-notice").hide();
+            localStorage.hidecookiebar = "1";
+          }
+        });
+        if (localStorage.hidecookiebar == "1") {
+          $("#cookie-notice").hide();
+        }
+      })(jQuery);
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
