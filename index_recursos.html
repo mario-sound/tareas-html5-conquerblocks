@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <!-- Título para el navegador y buscadores. Es el texto por el que los navegadores indexan nuestra página. -->
+  <title>Mario Sánchez</title>
+
+  <!-- Define qué tabla de codificación se usa para mostrar el contenido -->
+  <meta charset="UTF-8" />
+
+  <!-- Hoy en día no sirve para nada. Sólo los buscadores antiguos utilizan esta meta -->
+  <meta name="keywords" content="html, tarea" />
+
+  <!-- Es la etiqueta donde indicamos qué tamaño tiene nuestra página depende del ancho de nuestro dispositivo. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Se utiliza para indicar quien es el autor del documento. No tiene mayor uso. -->
+  <meta name="author" content="Mario Sánchez Molina" />
+
+  <!-- Sirve para mostrar el icono que se mostrará en el navegador. -->
+  <link rel="icon" type="image/ico" href="images/LOGO.ico" />
+
+  <!-- Define la descripción general de esta página en concreto. También aparecerá en los resultados de búsqueda donde se muestre nuestra página -->
+  <meta
+    name="description"
+    content="Mario Sánchez. Audio Specialist y Junior Web Developer."
+  />
+
+  <!-- Imagen para RRSS -->
+  <meta
+    property="og:image:alt"
+    content="image/LogoMarioSanchez.png"
+  />
+  
+  <!-- Para poner la cabecera del navegador en un color. Sólo funciona en algunos navegadores y en móvil. Mejora el branding de las webs en movil. -->
+  <meta name="theme-color" content="#f0bc5e" />
+  
+  <!-- Para linkear el archivo de estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Esto es un h1. Sólo debe haber 1 elemento h1 por documento.</h1>
+    <p>El h1 es fundamental para el SEO. Por eso es importante que sólo haya una.</p>
+    <h2>Esto es un h2.</h2>
+    <p>El órden <strong>es importante.</strong>. No tendría sentido que haya un h4 después de un h2 si antes no ha habido un h3 por ejemplo.</p>
+    <br/>
+    
+    <p>La etiqueta p nos sirve para crear párrafos. Son etiquetas de bloque.</p>
+
+    <blockquote cite="http://www.w3.org">"La etiqueta blockquote, sirve para indicar que el texto pertenece a otro sitio externo del cual se indica la fuente. Es una etiqueta de bloque.
+      Tiene un atributo específico (cite) de tipo url para indicar el origen de la cita."
+    </blockquote>
+    <br/>
+    <cite>Se puede utilizar como atributo y como etiqueta. Se suele utilizar para referenciar algun trabajo específico referenciado hecho por otro artista.
+      Es una etiqueta de línea.
+    </cite>
+    <br/>
+    <code>
+      El contenido de la etiqueta "code" se usa para indicarle al navegador que el contenido de este es código fuente.
+    </code>
+    <br/>
+    <strong>La etiqueta strong se utiliza para marcar texto como importante dentro de un párrafo o bloque de contenido.</strong>
+    <br/>
+    <em>Se utiliza para marcar una parte del texto con énfasis. Es menor a strong. Se renderiza en cursiva.</em>
+    <br/>
+    <hr/>
+    <h3>Los enlaces</h3>
+    <a href="#index.html">Lo utilizamos para enlazar a otras páginas, partes de nuestro documento o enlaces externos. En este caso referenciamos a este mismo documento.</a>
+    <p>El atributo download puede ir vacío. Esto hace que se descargue un fichero en lugar de llevarnos a este. Para que funcione la web tiene que estar servida en web.</p>
+    <a href="ejemplo/file.pdf">Esto abriría en el navegador un archivo PDF.</a>
+    <br/>
+    <a href="ejemplo/file.pdf" download="file_downloaded.pdf">Esto no abriría en el navegador un archivo PDF, sino que lo descargaría.</a>
+    <p>El atributo target.
+        <ul>
+          <li>_blank: hace que se abra el enlace en una pestaña nueva</li>
+          <li>_self: (Por defecto.) Hace que se abra el enlace en la pestaña actual.</li>
+        </ul>
+    </p>
+    <p>El atributo hreflang, establece el idioma del documento al que se accederá.</p>
+    <br/>
+    <hr/>
+    <p>Para utilizar plantillas de html5 podemos usar <a href="https://htmlboilerplates.com/" target="blank">esto como plantilla<a>.</p>
+    <p>También es interesante ver esta otra opción: <a href="https://html5boilerplate.com/" target="blank">es una opción más seria<a>.</p>
+    <p>Aquí un recurso para generar imagenes aleatorias: <a href="https://picsum.photos/200/300/" target="blank">para añadir a nuestra web si lo consideramos necesario<a>.</p>
+    <p>La web es: <a href="https://picsum.photos" target="blank">https://picsum.photos<a>.</p>
+    <p>Aquí un recurso para generar párrafos o frases aleatoriamente: <a href="https://loremipsum.io" target="blank">https://loremipsum.io<a>.</p>
+    <h6>Esto es una etiqueta h6.</h6>
+    <h5>Esto es una etiqueta h5.</h5>
+    <h4>Esto es una etiqueta h4.</h4>
+    <hr/>
+    <p>Vamos a ver que    html no procesa más de un espacio en blanco.</p>
+    <p>Para sustituirlo, podríamos usar el "truco" de usar el carácter "&_nbsp; (sin ese guion bajo.)"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; para añadir espacios.</p>
+    <wbr/><!--Esto es una "oportunidad de salto de línea."-->
+    <pre>En esta etiqueta se respetará al 100% lo que pongamos, literalmente. Por ejemplo,     añado 5 espacios.
+      También añado un salto de línea.
+      Esto mezcla presentación con información. No es recomendable.
+      Se suele utilizar para añadir código fuente en nuestra web.
+    </pre>
+</body>
+</html>
