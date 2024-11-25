@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Información sobre el producto</title>
+  </head>
+  <body>
+    <h1>Formularios</h1>
+    <a href="index.html">Volver a index.html</a>
+    <hr />
+    <h2>Información sobre el producto</h2>
+    <form action="" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Datos básicos</legend>
+
+        <p>
+          <label for="name">Nombre</label><br/>
+          <input type="text" id="name" max="50" size="30" />
+        </p>
+        <p>
+          <label for="textdescription">Descripción</label><br/>
+          <textarea
+            name="textdescription"
+            id="textdescription"
+            cols="30"
+            rows="5">
+          </textarea>
+        </p>
+        <p>
+          <label for="foto">Foto</label>
+          <input type="text" name="" id="" size="30" />
+          <input type="button" value="Elegir..." />
+          <!--<input type="file" name="foto" id="foto" />-->
+          <!--Debería ser un input type file, pero visualmente no encaja con la img, por eso lo he cambiado.-->
+        </p>
+        <p>
+          <input type="checkbox" name="visitcounter" id="visitcounter" />
+          <label for="visitcounter">Añadir contador de visitas</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Datos económicos</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="">Precio </label><input type="text" size="6" />€
+            </td>
+            <td>
+              <p>
+                Impuestos
+                <select name="porcentaje" id="porcentaje">
+                  <option value="4">4%</option>
+                  <option value="7">7%</option>
+                  <option value="16">16%</option>
+                  <option value="25">25%</option>
+                </select>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Promoción</p>
+              <input type="radio" name="ninguno" id="promo" value="" checked/>
+              <label for="ninguno">Ninguno</label></p>
+              <p>
+                <input type="radio" name="tgratuito" id="promo" value="gratuito"/>
+                <label for="transportegratuito">Transporte gratuito</label>
+              </p>
+              <p>
+                <input type="radio" name="descuento5" id="promo" value="5%" />
+                <label for="descuento5">Descuento 5%</label>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rellena tu CV</title>
+  </head>
+  <body>
+    <h1>Formularios</h1>
+    <a href="index.html">Volver a index.html</a>
+    <hr />
+    <h2>Rellena tu CV</h2>
+    <fieldset>
+      <legend>Datos personales</legend>
+      <form action="" method="get">
+        <p>
+          <label for="provincia">Provincia</label><br />
+          <select name="provincia" id="provincia" required>
+            <option value="">-</option>
+            <option value="madrid">Madrid</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="valencia">Valencia</option>
+          </select>
+        </p>
+        <p>
+          Fecha de nacimiento<br />
+          <input type="text" name="day" size="2" id="day" /> de
+          <select name="month" id="month">
+            <option value="enero">Enero</option>
+            <option value="febrero">Febrero</option>
+            <option value="marzo">Marzo</option>
+            <option value="abril">Abril</option>
+            <option value="mayo">Mayo</option>
+            <option value="junio">Junio</option>
+            <option value="julio">Julio</option>
+            <option value="agosto">Agosto</option>
+          </select>
+          de
+          <input type="text" name="year" size="4" />
+        </p>
+        <!--<p>
+          <input type="date" />
+        </p>-->
+        <p>
+          <label for="temasinteres">Temas de interés</label><br />
+          <select name="temasinteres" id="temasinteres" multiple size="5">
+            <option value="administracion">
+              Administración de bases de datos
+            </option>
+            <option value="analisisprogramacion">
+              Análisis y programación
+            </option>
+            <option value="arquitectura">Arquitectura</option>
+            <option value="calidad">Calidad</option>
+            <option value="erpcrmbi">ERP, CRM, Business Intelligence</option>
+            <option value="otros">Otros</option>
+            <option value="otros">Otros</option>
+            <option value="otros">Otros</option>
+            <option value="otros">Otros</option>
+            <option value="otros">Otros</option>
+            <option value="otros">Otros</option>
+          </select>
+        </p>
+        <button>Enviar</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

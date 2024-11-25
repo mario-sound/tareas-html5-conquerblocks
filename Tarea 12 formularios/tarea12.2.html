@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de etiqueta fieldset y legend</title>
+  </head>
+  <body>
+    <h1>Formularios</h1>
+    <a href="index.html">Volver a index.html</a>
+    <hr />
+    <h2>Formulario estructurado</h2>
+    <fieldset>
+      <legend>Datos personales</legend>
+      <form action="" method="get">
+        <p>
+          <label for="name">Nombre</label><br />
+          <input type="text" id="name" max="50" />
+        </p>
+        <p>
+          <label for="name">Apellidos</label><br />
+          <input type="text" id="surname" max="50" />
+        </p>
+        <p>
+          <label for="dni">DNI</label><br />
+          <input type="text" id="dni" size="9" maxlength="9" minlength="9" />
+        </p>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Datos de conexión</legend>
+      <form action="" method="get">
+        <p>
+          <label for="username">Nombre de usuario</label><br />
+          <input type="text" id="username" max="50" />
+        </p>
+        <p>
+          <label for="password">Contraseña</label><br />
+          <input type="password" id="password" max="50" />
+        </p>
+        <p>
+          <label for="2password">Repite la contraseña</label><br />
+          <input type="password" id="password" max="50" />
+        </p>
+      </form>
+    </fieldset>
+    <button>Enviar</button>
+  </body>
+</html>

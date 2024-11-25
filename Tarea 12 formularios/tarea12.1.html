@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de registro - Mi web</title>
+  </head>
+  <body>
+    <h1>Formularios</h1>
+    <a href="index.html">Volver a index.html</a>
+    <hr />
+    <fieldset>
+      <legend>Formulario de registro - Mi web</legend>
+      <form action="" method="get">
+        <p>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" maxlength="50" />
+        </p>
+        <p>
+          <label for="name">Apellidos</label>
+          <input type="text" id="surname" maxlength="50" />
+        </p>
+        <section>
+          <p>Sexo</p>
+          <p>
+            <input type="radio" name="sex" id="sexmale" value="male" />
+            <label for="sexmale">Masculino</label>
+          </p>
+          <p>
+            <input type="radio" name="sex" id="sexfemale" value="female" />
+            <label for="sexfemale">Femenino</label>
+          </p>
+        </section>
+        <p>
+          <label for="mail">Correo electrónico</label>
+          <input type="mail" id="mail" />
+        </p>
+        <p>
+          <label for="poblacion">Selecciona la población</label>
+          <select name="poblacion" id="poblacion" required>
+            <option value="">-</option>
+            <option value="Alicante">Alicante</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="Valencia">Valencia</option>
+          </select>
+        </p>
+        <p>
+          <label for="textdescription">Descripción</label><br />
+          <textarea
+            name="textdescription"
+            id="textdescription"
+            cols="30"
+            rows="5"
+            placeholder="Escribe tu texto..."
+          ></textarea>
+        </p>
+        <p>
+          <input type="checkbox" name="receiveinfo" id="receiveinfo" checked />
+          <label for="receiveinfo">
+            Deseo recibir información sobre novedades y ofertas
+          </label>
+        </p>
+        <p>
+          <input type="checkbox" name="receiveinfo" id="legalreaded" required />
+          <label for="legalreaded">
+            Declaro haber leido y aceptar las condiciones generales del programa
+            y la normativa sobre protección de datos
+          </label>
+        </p>
+        <button type="submit">Enviar</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
